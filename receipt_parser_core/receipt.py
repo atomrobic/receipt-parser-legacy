@@ -42,6 +42,23 @@ class Receipt(object):
         self.lines = raw
         self.normalize()
         self.parse()
+        
+    def __init__(self, config, raw):
+        """
+        :param config: ObjectView
+            Config object
+        :param raw: [] of str
+            Lines in file
+        """
+
+        self.config = config
+        self.market = None
+        self.date = None
+        self.sum = None
+        self.items = None
+        self.lines = raw
+        self.normalize()
+        self.parse()
 
     def normalize(self):
         """
