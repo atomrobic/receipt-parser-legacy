@@ -64,6 +64,8 @@ def find_images(folder):
                 _ = Image.open(full_path)  # if constructor succeeds
                 _ = Image.open(full_path)  # if constructor succeeds
                 _ = Image.open(full_path)  # if constructor succeeds
+                _ = Image.open(full_path)  # if constructor succeeds
+
 
 
                 yield file
